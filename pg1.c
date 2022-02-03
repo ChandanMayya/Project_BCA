@@ -1,1 +1,1 @@
-pritn
+#include<stdio.h>
