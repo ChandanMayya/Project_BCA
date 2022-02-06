@@ -3,6 +3,11 @@
 char postfix[50],infix[50],stack[50];
 int top=-1;
 
+void inftopost();
+void push(char);
+char pop();
+int preceed(char);
+
 void inftopost(){
 	char symbol;
 	int i=0,k=0;
