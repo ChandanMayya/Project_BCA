@@ -12,7 +12,7 @@ int main(){
 	
 		switch(choice){
 		case 1:
-			if(top!=max){
+			if(top<max-1){
 				top++;
 				printf("Enter the element to Push:\t");
 				scanf("%d",&ele);
@@ -34,7 +34,7 @@ int main(){
 		case 3:
 			if(top!=-1){
 				printf("The elements of the stack are:\n");
-				for(i=0;i<=top;i++)
+				for(i=top;i>=0;i--)
 					printf("|\t%d\t|\n",s[i]);
 				printf("+---------------+\n");
 			}else{
@@ -43,6 +43,8 @@ int main(){
 			break;
 		case 4:
 			return 0;
+		default:
+			printf("Invalid input..\n");
 		}
 	}
 }		
