@@ -1,12 +1,8 @@
 #include<stdio.h>
-int main(){
-	int a[10],n,i,j,temp,min;
-	printf("Enter the number of elements:\t");
-	scanf("%d",&n);
-	printf("Enter the array elements:\t");
-	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
-	
+int a[10],n;
+void ssort();
+void ssort(){
+	int i,j,temp,min;
 	for(i=0;i<n;i++)
 	{
 		min=i;
@@ -17,6 +13,14 @@ int main(){
 		a[min]=a[i];
 		a[i]=temp;
 	}
+}
+int main(){
+	int i;
+	printf("Enter the number of elements:\t");
+	scanf("%d",&n);
+	printf("Enter the array elements:\t");
+	for(i=0;i<n;i++)
+		scanf("%d",&a[i]);
 	printf("\nThe sorted array is:\t");
 	for(i=0;i<n;i++)
 		printf("%d\t",a[i]);
