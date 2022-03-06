@@ -3,10 +3,10 @@ int a[10],n;
 void ssort();
 void ssort(){
 	int i,j,temp,min;
-	for(i=0;i<n;i++)
+	for(i=n;i>0;i--)
 	{
 		min=i;
-		for(j=i+1;j<n;j++)
+		for(j=n;j>i+1;j--)
 			if(a[min]>a[j])
 				min=j;
 		temp=a[min];
