@@ -3,10 +3,10 @@ int a[10],n;
 void ssort();
 void ssort(){
 	int i,j,temp,min;
-	for(i=n;i>0;i--)
+	for(i=n-1;i>0;i--)
 	{
-		min=i;
-		for(j=n;j>i+1;j--)
+		min=0;
+		for(j=1;j<=i;j++)
 			if(a[min]>a[j])
 				min=j;
 		temp=a[min];
@@ -21,6 +21,7 @@ int main(){
 	printf("Enter the array elements:\t");
 	for(i=0;i<n;i++)
 		scanf("%d",&a[i]);
+	ssort();
 	printf("\nThe sorted array is:\t");
 	for(i=0;i<n;i++)
 		printf("%d\t",a[i]);
