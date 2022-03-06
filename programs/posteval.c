@@ -1,3 +1,6 @@
+//postfix evaluation
+//use the below command to compile
+//cc posteval.c -lm
 #include<stdio.h>
 #include<ctype.h>
 #include<math.h>
@@ -36,9 +39,9 @@ int eval()
 					break;
 					}else{printf("Out of loop");}
 					
-				/*case '^':
-					push(pow(op1,op2));
-					break;*/
+				case '^':
+					push(pow(op1,op2));	//works only for small numbers.. When data of double or float exits, might work unexpectedly..  
+					break;
 				default :
 					printf("Invalid Operator");
 			}
