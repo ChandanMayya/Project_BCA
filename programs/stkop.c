@@ -1,6 +1,7 @@
 #include<stdio.h>
+#define max 10
 int main(){
-	int top=-1,max,s[10],choice,ele,i;
+	int top=-1,s[max],choice,ele,i;
 	printf("Enter the max of the stack (<10):\t");
 	scanf("%d",&max);
 	while(1)
