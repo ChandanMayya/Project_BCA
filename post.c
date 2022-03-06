@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<ctype.h>
 
-char postfix[50],infix[50],stack[50];
+char postfix[50],infix[50],stack[50];#Declarations of variables
 int top=-1;
 void push(char);
 char pop();
